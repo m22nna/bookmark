@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book mark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/all.min.css">   
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="common-title d-flex justify-content-center align-items-center  ">
+        <div class="title ">
+            <h1 class="text-center family mt-5 ">Bookmaker 
+ <div class="span z-1"></div></h1>  
+</div>
+</div>
+    <div class="container ">
+  
+<hr class="">
+<h2 class="text-center icon-color"><i class="fa-solid fa-bookmark icon-color"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark icon-color "></i></h2>
+<div class="inpur1 d-flex flex-column mt-5 mb-5">
+<label for="name" class="fw-bold mb-1 "><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+<input type="text" placeholder="BookMark Name" class="w-100 input" id="bookmark-name"></div>
+<div class="input2  d-flex flex-column mb-5">
+    <label for="url" class="fw-bold mb-1"><i class="fa-solid fa-link"></i>Site URL</label>
+    <input type="url" placeholder="Website URL" class="w-100 input" id="bookmark-url"></div>
+<div class="button d-flex justify-content-center align-items-center">
+    <button type="button" class="submet-button " onclick="validateAndAdd();">Submet</button>
+</div>
+<hr>
+<div class="table bg-white w-100 border-1 d-flex justify-content-center align-items-center">
+    <div class="row w-90 g-0 ">
+        <p class="col-3 fw-bold col-sm-3">index</p>
+        <p class="col-3 fw-bold col-sm-3 ">Website Name</p>
+        <p class="col-3 fw-bold  col-sm-3">Visit</p>
+        <p class="col-3 fw-bold  col-sm-3">Delete</p>
+    </div>
+</div>
+<div class="table bg-white w-100 border-1 d-flex justify-content-center align-items-center">
+    <div class="row w-90 g-0"id="rowdata">
+        <!--<p class="col-3 fw-bold ">index</p>
+        <p class="col-3 fw-bold ">Website Name</p>
+        <button class=" col-3 inner1" id="visit_url" onclick="">visit</button>
+        <button class="col-3 inner" id="delete_item" onclick="deleteing(${i});">delete</button>
+       -->
+    </div>
+</div>
+</div>
+<div class="eror properties d-none" id="error-message">
+    <div class="part1 d-flex justify-content-between">
+    <div class="icons">
+        <i class="fa-solid fa-circle c1"></i>
+        <i class="fa-solid fa-circle c2"></i>
+        <i class="fa-solid fa-circle c3"></i>    
+    </div>
+    <button type="button" class="close" onclick="closeErrorMessage();">&times;</button>
+    </div>
+    <hr>
+    <div class="part2">
+    <h2>Site Name or Url is not valid, Please follow the rules below :</h2>
+    <h3><i class="fa-solid fa-circle-arrow-right"></i>Site name must contain at least 3 characters</h3>
+    <h3><i class="fa-solid fa-circle-arrow-right"></i>Site URL must be a valid one</h3>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
